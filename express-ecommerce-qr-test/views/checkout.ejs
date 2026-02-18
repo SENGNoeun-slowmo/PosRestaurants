@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8">
+  <title>Dynamic KHQR Payment</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+  <div class="container my-5 text-center">
+    <h2>ទូទាត់ <%= amount %> USD</h2>
+    <h4><%= product.name %></h4>
+    <p>Transaction ID: <%= tranId %></p>
+    
+    <div class="my-4">
+      <img src="<%= qrImage %>" alt="Dynamic KHQR" class="img-fluid" style="max-width: 300px;">
+    </div>
+    
+    <p class="lead">សូមស្កេន QR ខាងលើតាម App ធនាគារ ឬ Wallet ណាមួយ។ QR នឹងផុតកំណត់ក្នុង 1 ម៉ោង។</p>
+    
+    <!-- បន្ថែម JavaScript ដើម្បី poll check payment ដោយស្វ័យប្រវត្តិ -->
+    <script>
+      setInterval(async () => {
+        const response = await fetch('/check-payment/<%= md5 %>');
+        const data = await response.json();
+        if (data.status === 'SUCCESS') {
+          alert('ទូទាត់ជោគជ័យ!');
+          window.location.href = '/success';
+        }
+      }, 5000); // Check រៀងរាល់ 5 វិនាទី
+    </script>
+    
+    <a href="/" class="btn btn-secondary">ត្រឡប់</a>
+  </div>
+</body>
+</html>

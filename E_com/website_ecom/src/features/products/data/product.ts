@@ -1,0 +1,133 @@
+// src/features/products/data/mockProducts.ts
+
+import type { Product } from "../types";
+
+export const products: Product[] = [
+  {
+    id: "1",
+    name: "អាវយឺតបុរស Cotton Premium",
+    name_en: "Men's Cotton Premium T-Shirt",
+    price: 12.99,
+    originalPrice: 18.99,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"1",
+    images: [
+      "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+      "https://via.placeholder.com/400x400/C8E6C9/000000?text=T-Shirt-2",
+      "https://via.placeholder.com/400x400/A5D6A7/000000?text=T-Shirt-3"
+    ],
+    description: "អាវយឺតកប្បាស 100% ស្រួលស្លៀក ស័ក្តិសមសម្រាប់អាកាសធាតុក្តៅ",
+    variants: [
+      { id: "1-1", name: "Black", stock: 15 },
+      { id: "1-2", name: "White", stock: 20 },
+      { id: "1-3", name: "Navy", stock: 8 }
+    ],
+    stock: 43,
+    rating: 4.5,
+    reviewCount: 128
+  },
+  {
+    id: "2",
+    name: "ឡាន់ហ្គេសស្ត្រីស្លឹកឈើ",
+    name_en: "Women's Leaf Print Dress",
+    price: 28.50,
+    originalPrice: 35.00,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"3",
+    images: [
+      "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+      "https://via.placeholder.com/400x400/E1BEE7/000000?text=Dress-2"
+    ],
+    description: "រ៉ូបស្ត្រីគួរសមសម្រាប់ថ្ងៃឈប់សម្រាក ឬពិសេស",
+    variants: [
+      { id: "2-1", name: "S", stock: 5 },
+      { id: "2-2", name: "M", stock: 12 },
+      { id: "2-3", name: "L", stock: 3 }
+    ],
+    stock: 20,
+    rating: 4.7,
+    reviewCount: 89
+  },
+  {
+    id: "3",
+    name: "ស្បែកជើងស្ពត Adidas Style",
+    name_en: "Adidas Style Sneakers",
+    price: 42.00,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"3",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    description: "ស្បែកជើងស្ពត ស្រាល ដើរបានយូរ",
+    variants: [
+      { id: "3-1", name: "40", stock: 10 },
+      { id: "3-2", name: "42", stock: 14 },
+      { id: "3-3", name: "44", stock: 6 }
+    ],
+    stock: 30,
+    rating: 4.3,
+    reviewCount: 67
+  },
+  {
+    id: "4",
+    name: "ខោវ៉ាយឡង់ស្តរ",
+    name_en: "Denim Jeans",
+    price: 24.99,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"2",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    description: "ខោវ៉ាយឡង់ស្តរ ម៉ូតបែបសម័យ",
+    variants: [{ id: "4-1", name: "30", stock: 8 }, { id: "4-2", name: "32", stock: 12 }],
+    stock: 20,
+    rating: 4.4,
+    reviewCount: 45
+  },
+  {
+    id: "5",
+    name: "ហូឌីធំសម្រាប់រដូវរងា",
+    name_en: "Winter Hoodie",
+    price: 32.00,
+    originalPrice: 45.00,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"2",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    stock: 15,
+    rating: 4.6,
+    reviewCount: 92
+  },
+  {
+    id: "6",
+    name: "កាបូបស្ត្រី Handbag",
+    name_en: "Women's Handbag",
+    price: 38.00,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"1",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    stock: 12,
+    rating: 4.8,
+    reviewCount: 156
+  },
+  {
+    id: "7",
+    name: "វ៉ែនតា UV Protection",
+    name_en: "UV Protection Sunglasses",
+    price: 18.50,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"4",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    stock: 25,
+    rating: 4.2,
+    reviewCount: 78
+  },
+  {
+    id: "8",
+    name: "នាឡិកាដៃ Quartz Watch",
+    name_en: "Quartz Wrist Watch",
+    price: 55.00,
+    originalPrice: 75.00,
+    image: "https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg",
+    CategoryId:"4",
+    images: ["https://images.pexels.com/photos/28828019/pexels-photo-28828019.jpeg"],
+    stock: 9,
+    rating: 4.7,
+    reviewCount: 203
+  }
+]

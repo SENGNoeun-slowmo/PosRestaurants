@@ -1,0 +1,20 @@
+export interface Product{
+    id:string,
+    name:string,
+    name_en:string,
+    price:number,
+    originalPrice?:number,
+    image:string,
+    images?:string[],
+    description?:string,
+    variants?:Variant[],
+    stock:number,
+    rating?:number,
+    reviewCount?:number,
+    CategoryId?:string|number
+}
+export interface Variant{
+    id:string,
+    name:string,
+    stock:number
+}

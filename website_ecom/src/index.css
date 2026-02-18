@@ -1,0 +1,94 @@
+
+
+
+/*====================
+   RESPONSIVE
+===================== */
+
+/* Small devices */
+@media (max-width: 575px) {
+    .Navbar-bg,.mega-menu.open,
+    .search-box.active,
+    .search-box,.bag-box.active,
+    .bag-box,
+    .new-arrivals-bar
+      ,.new-arrivals-bar span,
+      .category-item .link{
+      display: none ;
+    }
+    /* .phone-menu{
+      display: block; 
+      background-color: aquamarine;
+     } */
+    .search-box.active {
+  opacity: 1;
+  visibility: visible;
+}
+ .home-page{
+          
+      margin-top: 30px !important;
+    }
+     .home-page .ifo-left{
+    
+    width: 100% !important;
+    height: 40vh !important;
+   
+}
+ 
+
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .Navbar-bg,.mega-menu.open
+    ,.search-box.active,
+    
+    .search-box,.bag-box.active,
+    .bag-box,.new-arrivals-bar,
+    .new-arrivals-bar span,
+    .category-item .link
+    {
+      display: none;
+      
+    }
+   .home-page{
+     
+      margin-top: 30px !important;
+    }
+     .home-page .ifo-left{
+    
+    width: 100% !important;
+    height: 20vh !important;
+   
+}
+.shop-now-btn{
+  margin-left: 130px;
+}
+ 
+    .search-box.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+}
+
+/* Medium devices */
+@media (min-width: 768px) {
+    
+.navbar-link {
+ font-size: 10px;
+ padding: 0 14px;
+}
+.phone-menu,.drop-menu{
+      display: none;
+     }
+      
+     
+}
+@media (min-width: 992px) {
+  
+}
+
+/* Extra large (≥1200px) */
+@media (min-width: 1200px) {
+  
+}

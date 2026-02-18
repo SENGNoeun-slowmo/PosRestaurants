@@ -1,0 +1,22 @@
+{
+  "name": "express-ecommerce-qr-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bakong-khqr": "^1.0.20",
+    "dotenv": "^17.2.3",
+    "ejs": "^4.0.1",
+    "express": "^5.2.1",
+    "qrcode": "^1.5.4",
+    "redis": "^5.10.0"
+  }
+}

@@ -1,0 +1,90 @@
+
+
+/* Mega Menu */
+.mega-menu {
+  top: 44px;
+  /* min-height: 250px; */
+  height:max-content;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-color: rgba(129, 129, 129, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  z-index: 899;
+}
+
+.mega-menu.open {
+  max-height: 500px;
+  opacity: 1;
+  padding: 20px 0;
+  z-index: 777;
+  transition: 
+    opacity 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    visibility 2s;
+    
+    background-color:rgb(163, 46, 46);
+}
+.mega-menu.notopen {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-1500px);
+  pointer-events: none;
+}
+.Navbar-bg.open{
+  background-color: white;
+  /* visibility: visible; */
+}
+
+.mega-menu-content {
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.mega-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  padding: 0 20px;
+}
+
+.mega-menu-item {
+  margin: 4px 0;
+}
+
+.mega-menu-link {
+ color: black;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 400;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  display: block;
+  padding: 4px 0;
+}
+
+.mega-menu-link:hover {
+  opacity: 1;
+  color: #06c;
+}
+
+/* Smooth transitions for all interactive elements */
+* {
+  transition: opacity 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}

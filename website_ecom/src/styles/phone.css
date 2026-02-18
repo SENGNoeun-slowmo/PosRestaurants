@@ -1,0 +1,75 @@
+.phone-menu{
+  display: flex;
+  margin: 0;
+  position: fixed;
+  padding: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: rgb(216, 214, 214);
+  
+}
+.phone-menu.open{
+  background-color: white;
+  z-index: 57;
+  
+
+}
+.phone-menu.search-open{
+  background-color: white;
+  /* z-index: 1; */
+
+}
+.phone-menu .phone-icon{
+  width: 70%;
+  display: block;
+} 
+.phone-menu .menu-bar{
+display: flex;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between icons */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phone-menu .menu-bar ul li{
+  display: block;
+  padding: 0px 4px;
+
+  
+}
+ul li:last-child {
+  margin-left: auto;
+}
+.phone-menu .menu-bar{
+  width: 30%;
+  display: block;
+}
+button{
+  width: 12px;
+}
+.drop-menu{
+  /* background-color:rgb(143, 28, 28); */
+  height: 100vh;
+  width: 100%;
+  color: #06c;
+  background-color: white;
+  z-index: 12;
+  overflow-y: auto;
+  overflow-x: hidden; 
+  position: fixed;
+  /* animation */
+
+  transform: translateY(-100%);
+  transition: transform 0.5s ease-in-out; /* ← slow */
+}
+
+.drop-menu.active {
+  transform: translateY(0);
+  margin-top: 45px;
+  z-index: 1;
+}
+

@@ -1,0 +1,26 @@
+.slide-bar{
+    display: flex;
+    padding: 20px;
+    /* background-color: rgb(196, 63, 63); */
+    /* max-width: 600px !important; */
+    z-index: 66;
+    
+}
+.slide-bar ul li .item{
+    list-style-type: none;
+    margin-right: 15px;
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+    text-decoration: none;
+     max-height: 0;          /* initially hidden */
+  /* opacity: 0; */
+  overflow: hidden;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+.slide-bar.open{
+    animation: slideIn 0.5s ease-in-out;
+    /* display: none; */
+     max-height: 50px;      /* adjust to fit content */
+  opacity: 0.2;
+}
